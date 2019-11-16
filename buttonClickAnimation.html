@@ -25,7 +25,8 @@
         display: block;
         position: absolute;
         padding: 100px 150px;
-        height: 50px;
+        height: 100px;
+        width: 150px;
         top: 50%;
         right: 50%;
         transform: translate(50%, -50%);
@@ -37,7 +38,7 @@
       .button:active:after {
         padding: 0;
         margin: 0;
-        opacity: 1;
+        opacity: 0.15;
         transition: 0s;
       }
     </style>
@@ -45,6 +46,12 @@
   <body>
     <h2>Animated Button - Ripple Effect</h2>
 
-    <button class="button">Click Me</button>
+    <button class="button" id="button">Click Me</button>
+
+    <script>
+      const btn = document.getElementById("button");
+
+      btn.addEventListener("click", () => {});
+    </script>
   </body>
 </html>
